@@ -28,4 +28,4 @@ project object from outside your build script.
 * 1.15 **custom task type**
 * 1.16 Exercise custom task type
 * 1.17 **Logging** `logger.info`
-* 
+* 1.18 **BuildLifecycle** 在 `doLast` 外面的都会在 Configuration 的时候就print出来，因为Configuration的时候会给task的执行顺序排序。在 `doLast` 里面的，只有在执行那个task的时候才print
