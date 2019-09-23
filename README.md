@@ -11,7 +11,7 @@ apps in the first place. If you're just starting out on your Android journey,
 you might want to take Udacity's [Developing Android
 Apps](https://www.udacity.com/course/ud853) course.
 
-## my note
+## My Note
 
 * 1.02 install Gradle
 * 1.03 **Groovy fundamentals**: use java to run groovy
@@ -21,3 +21,10 @@ Apps](https://www.udacity.com/course/ud853) course.
 * 1.09 Exercise Task Dependencies
 * 1.10 **Copying, zip and delete** files in Gradle
 * 1.11 Exercise Copying, zip and delete
+* 1.12 **incremental build** only build the task which is new or modified.
+* 1.13 **gradle.properties** parametrize your build by adding properties to the
+project object from outside your build script.
+* 1.14 Exercise gradle.properties
+* 1.16 **custom task type**
+* 1.17 Exercise custom task type
+* 
