@@ -13,6 +13,10 @@ Apps](https://www.udacity.com/course/ud853) course.
 
 ## my note
 
-* 1.0.2 install Gradle
-* 1.0.3 Groovy fundamentals: use java to run groovy
-* 1.0.4 Groovy fundamentals: closures(闭包): Closures have two interesting features. First, they are just values that can be assigned to a variable, just like a number or a string. Second, they can capture variables from the scope in which they're declared.
+* 1.02 install Gradle
+* 1.03 **Groovy fundamentals**: use java to run groovy
+* 1.04 **Groovy fundamentals**: closures(闭包): Closures have two interesting features. First, they are just values that can be assigned to a variable, just like a number or a string. Second, they can capture variables from the scope in which they're declared.
+* 1.06 **Create Gradle task, Add an action to your task**
+* 1.08 **Task Dependencies**: relationships between tasks `dependsOn`, `finalizedBy`, `shouldRunAfter`, `mustRunAfter`
+* 1.09 Exercise Task Dependencies
+* 
