@@ -19,4 +19,5 @@ Apps](https://www.udacity.com/course/ud853) course.
 * 1.06 **Create Gradle task, Add an action to your task**
 * 1.08 **Task Dependencies**: relationships between tasks `dependsOn`, `finalizedBy`, `shouldRunAfter`, `mustRunAfter`
 * 1.09 Exercise Task Dependencies
-* 
+* 1.10 **Copying, zip and delete** files in Gradle
+* 1.11 Exercise Copying, zip and delete
