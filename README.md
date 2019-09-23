@@ -25,6 +25,7 @@ Apps](https://www.udacity.com/course/ud853) course.
 * 1.13 **gradle.properties** parametrize your build by adding properties to the
 project object from outside your build script.
 * 1.14 Exercise gradle.properties
-* 1.16 **custom task type**
-* 1.17 Exercise custom task type
+* 1.15 **custom task type**
+* 1.16 Exercise custom task type
+* 1.17 **Logging** `logger.info`
 * 
