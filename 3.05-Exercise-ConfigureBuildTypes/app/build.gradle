@@ -20,13 +20,13 @@ Exercises:
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 24
-    buildToolsVersion "24.0.1"
+    compileSdkVersion 28
+    buildToolsVersion "28.0.3"
 
     defaultConfig {
         applicationId "com.udacity.gradle.buildtypes"
         minSdkVersion 15
-        targetSdkVersion 24
+        targetSdkVersion 28
         versionCode 1
         versionName "1.0"
     }
@@ -43,11 +43,19 @@ android {
 To use our solution, uncomment the following line.
 
 */
+// 3. Set the application id suffix for the 'debug' build type to 'debug.
+android {
+    buildTypes {
+        debug {
+            applicationIdSuffix "debug"
+        }
+    }
+}
 
 // apply from:"solution.gradle"
 
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'com.android.support:appcompat-v7:24.1.1'
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:28.0.0'
 }
