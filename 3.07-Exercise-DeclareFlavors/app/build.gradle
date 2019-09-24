@@ -39,7 +39,7 @@ android {
         }
     }
 
-    // Specifies one flavor dimension.
+    // 3. Specifies one flavor dimension.
     flavorDimensions "version"
     productFlavors {
         free {
@@ -51,6 +51,7 @@ android {
             applicationId 'com.udacity.gradle.buildflavors.paid'
         }
     }
+    // 5. Build > Select Build Variant
 }
 
 /*
