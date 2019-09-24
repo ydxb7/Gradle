@@ -51,5 +51,8 @@ project object from outside your build script.
 
 * 3.01 **import Gradle project into Android Studio** `$ chmod +x gradlew` `./gradlew tellJoke`
 * 3.02 Exercise: import Gradle project into Android Studio
-* 3.04 **buildTypes** add new build types of our own
+* 3.04 **`buildTypes`** add new build types of our own
 * 3.05 Exercise: buildTypes. Set the application id suffix for the 'debug' build type to 'debug'.
+* 3.06 **`productFlavors`** free or paid: total 4 types: freeDebug, freeRelease, paidDebug, paidRelease
+* 3.07 Exercise: productFlavors
+* 

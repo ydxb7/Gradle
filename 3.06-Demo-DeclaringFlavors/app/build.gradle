@@ -18,13 +18,13 @@ way we can install both flavors on the same device.
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 24
-    buildToolsVersion "24.0.1"
+    compileSdkVersion 28
+    buildToolsVersion "28.0.3"
 
     defaultConfig {
         applicationId "com.example.udacity.declaringflavors"
         minSdkVersion 15
-        targetSdkVersion 24
+        targetSdkVersion 28
         versionCode 1
         versionName "1.0"
     }
@@ -36,11 +36,15 @@ android {
         }
     }
 
+    // Specifies one flavor dimension.
+    flavorDimensions "version"
     productFlavors {
         free {
+            dimension "version"
             applicationId "com.example.udacity.declaringflavors.free"
         }
         paid {
+            dimension "version"
             applicationId "com.example.udacity.declaringflavors.paid"
         }
     }
@@ -87,6 +91,6 @@ requires a new Android SDK. We can enforce that like so:
 
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'com.android.support:appcompat-v7:24.1.1'
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:28.0.0'
 }
