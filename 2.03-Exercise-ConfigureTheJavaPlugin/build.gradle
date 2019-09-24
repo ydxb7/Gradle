@@ -26,3 +26,36 @@ User Guide chapter regarding the Java plugin.
 https://docs.gradle.org/current/userguide/java_plugin.html#sec:source_sets
 
 */
+
+// task myTest{}
+// def doubleIt = { println "run doubleIt."}
+
+// def applyTwice(func){
+//     func()
+// }
+
+// applyTwice {println "run doubleIt2."}
+
+
+apply plugin: "java" // 1. Apply the Java plugin to your project.
+
+
+
+// {} 是闭包参数
+jar {
+    manifest {
+        attributes 'Implementation-Version': '1.0' // 2. Add manifest attribute
+    }
+}
+
+sourceSets {
+    main {
+        java {
+            srcDir 'java' // 3. Add 'java' directory as a source directory
+        }
+    }
+}
+
+
+
+

@@ -32,3 +32,18 @@ task printDependencies {
         configurations.compile.each { println it.name }
     }
 }
+
+// 1. Configure Maven Central as a repository
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+	compile 'commons-io:commons-io:2.5' // 2. Add commons-io dependency
+    compile fileTree(dir: 'libs', include: '*.jar') // 3. Add 'lib' directory
+}
+
+// 4. $ gradle printDependencies
+// 5. $ gradle --refresh-dependencies printDependencies
+// 6. $ gradle printDependencies
+
