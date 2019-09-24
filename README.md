@@ -48,3 +48,7 @@ project object from outside your build script.
 * 2.13 Exercise: Gradle wrapper
 
 ---
+
+* 3.01 **import Gradle project into Android Studio** `$ chmod +x gradlew` `./gradlew tellJoke`
+* 3.02 Exercise: import Gradle project into Android Studio
+* 
