@@ -32,10 +32,12 @@ project object from outside your build script.
 
 ---
 
-* 2.01 **Applying the Java plugin** [Java plugin tasks relationships](https://docs.gradle.org/current/userguide/java_plugin.html)
+* 2.01 **Applying the Java plugin and Run task** [Java plugin tasks relationships](https://docs.gradle.org/current/userguide/java_plugin.html) `task execute(type: JavaExec)`
 * 2.02 Exercise: `apply plugin: "java"`
 * 2.03 **add additional configuration to Java plugin**
 * 2.04 **use local / remote libs**
 * 2.05 **define dependencies**
 * 2.06 Exercise define dependencies
-* 
+* 2.07 **visualize dependencies** `gradle dependencies` `gradle dependencies --configuration runtime` `gradle dependencyInsight --dependency commons-logging`
+* 2.08 **add dependencies to the 'compile' / 'testCompile' configuration / create a custom configuration.** Configurations are really just fancy file collections and can be used anywhere a file collection can be used, such as in Copy tasks.
+* 2.09 Exercise: working with configurations. 1. Create a new configuration called 'deps'. 2. Make 'compile' extend from 'deps'. 3. Add 'guava' dependency. 5. Add Zip task to bundle dependencies from 'deps'
