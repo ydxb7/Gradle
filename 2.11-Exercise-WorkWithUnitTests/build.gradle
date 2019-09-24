@@ -20,3 +20,10 @@ apply plugin: 'java'
 repositories {
     mavenCentral()
 }
+
+dependencies {
+    testCompile 'junit:junit:4.12' // 1. Add test dependency to the latest version of 'junit'.
+}
+
+// 2. $ gradle test
+// 3. $ open build/reports/tests/test/index.html

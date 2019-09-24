@@ -19,3 +19,20 @@ Hint: For more information on using Gradle nightly builds, check out the
 Gradle website: http://gradle.org/gradle-nightly-build/
 
 */
+
+// 1. $ gradle wrapper
+// 2. $ ./gradlew tasks
+// 3. You can configure the `wrapper` task to use a different version of Gradle
+// using the following:
+wrapper {
+    gradleVersion = '2.14.1'
+}
+// 4. $ gradle wrapper
+//    $ ./gradlew -v
+
+// 5. modify file gradle/wrapper/gradle-wrapper.properties
+// distributionBase=GRADLE_USER_HOME
+// distributionPath=wrapper/dists
+// distributionUrl=https\://services.gradle.org/distributions/gradle-5.6.2-bin.zip
+// zipStoreBase=GRADLE_USER_HOME
+// zipStorePath=wrapper/dists

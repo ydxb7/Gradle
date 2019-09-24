@@ -41,3 +41,10 @@ project object from outside your build script.
 * 2.07 **visualize dependencies** `gradle dependencies` `gradle dependencies --configuration runtime` `gradle dependencyInsight --dependency commons-logging`
 * 2.08 **add dependencies to the 'compile' / 'testCompile' configuration / create a custom configuration.** Configurations are really just fancy file collections and can be used anywhere a file collection can be used, such as in Copy tasks.
 * 2.09 Exercise: working with configurations. 1. Create a new configuration called 'deps'. 2. Make 'compile' extend from 'deps'. 3. Add 'guava' dependency. 5. Add Zip task to bundle dependencies from 'deps'
+* 2.10 **unit test**
+* 2.11 Exercise: test
+* [third party plugin](https://plugins.gradle.org/)
+* 2.12 **Gradle wrapper** put your build tool under version control. `gradle wrapper` `./gradlew --version`
+* 2.13 Exercise: Gradle wrapper
+
+---
