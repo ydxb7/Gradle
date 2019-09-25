@@ -65,4 +65,6 @@ project object from outside your build script.
 #### multi project builds
 
 * 4.01 **Creating a Java library, Add a Java library project to an Android studio build**.`settings.gradle` : tell Gradle what sub-projects to include in the multi-project build. `include ':app', ':javaJokes'`,`./gradlew projects`, project dependency: `implementation project(':javaJokes')`
-* 4.02 Exercise: Create library and add it to app
+* 4.02 Exercise: **Create android library and add it to app**
+* 4.03 Create android library and add it to app
+* 4.04 **Create and add a Java lib and an Android lib**
