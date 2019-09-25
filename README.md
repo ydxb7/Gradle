@@ -31,6 +31,7 @@ project object from outside your build script.
 * 1.18 **BuildLifecycle** 在 `doLast` 外面的都会在 Configuration 的时候就print出来，因为Configuration的时候会给task的执行顺序排序。在 `doLast` 里面的，只有在执行那个task的时候才print
 
 ---
+#### java
 
 * 2.01 **Applying the Java plugin and Run task** [Java plugin tasks relationships](https://docs.gradle.org/current/userguide/java_plugin.html) `task execute(type: JavaExec)`
 * 2.02 Exercise: `apply plugin: "java"`
@@ -48,14 +49,20 @@ project object from outside your build script.
 * 2.13 Exercise: Gradle wrapper
 
 ---
+#### different flavors
 
 * 3.01 **import Gradle project into Android Studio** `$ chmod +x gradlew` `./gradlew tellJoke`
 * 3.02 Exercise: import Gradle project into Android Studio
-* 3.04 **`buildTypes`** add new build types of our own
+* 3.04 **`buildTypes`** (debug, release) add new build types of our own
 * 3.05 Exercise: buildTypes. Set the application id suffix for the 'debug' build type to 'debug'.
 * 3.06 **`productFlavors`** free or paid: total 4 types: freeDebug, freeRelease, paidDebug, paidRelease. `Build > Select Build Variant`
-* 3.07 Exercise: productFlavors
-* 3.08 **Use different flavors(free, debug) to run the app.** We'll make an app where both flavors present a "Tell Joke" button.
+* 3.07 Exercise: productFlavors. flavor dimension: 例如各个版本都根据分辨率不同生成多个版本。
+* 3.08 **Use different flavors(free, debug) to run the app.** We'll make an app where both flavors present a "Tell Joke" button. `Build > Select Build Variant`
   * **paid flavor** that button will launch a new activity that displays a joke.
   * **free flavor** will display a toast telling the user to upgrade to the paid version.
-* 
+
+---
+#### multi project builds
+
+* 4.01 **Creating a Java library, Add a Java library project to an Android studio build**.`settings.gradle` : tell Gradle what sub-projects to include in the multi-project build. `include ':app', ':javaJokes'`,`./gradlew projects`, project dependency: `implementation project(':javaJokes')`
+* 4.02 Exercise: Create library and add it to app
