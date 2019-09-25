@@ -10,7 +10,7 @@ http://tools.android.com/tech-docs/new-build-system/user-guide#TOC-Signing-Confi
 
 3. Configure the release build type to use your new signing configuration. Again, you can either use the Module Settings dialog, or do it manually.
 
-4. Finally, deploy the release build type to your test device!
+4. Finally, deploy the release build type to your test device! 打开右侧Gradle选项卡, :app->install ->installRelease, 在目录 app/build/outputs/apk 中
 
 The solution to this exercise is essentially Demo 4.05
 
