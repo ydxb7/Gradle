@@ -68,3 +68,6 @@ project object from outside your build script.
 * 4.02 Exercise: **Create android library and add it to app**
 * 4.03 Create android library and add it to app
 * 4.04 **Create and add a Java lib and an Android lib**
+* 4.05 **Add a signing configuration** [https://classroom.udacity.com/courses/ud867/lessons/3983839023/concepts/43260001280923](https://classroom.udacity.com/courses/ud867/lessons/3983839023/concepts/43260001280923)
+* 4.06 Exercise: Add a signing configuration
+* 
