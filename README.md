@@ -69,8 +69,9 @@ project object from outside your build script.
 * 4.03 Create android library and add it to app
 * 4.04 **Create and add a Java lib and an Android lib**
 * 4.05 **Add a signing configuration** [https://classroom.udacity.com/courses/ud867/lessons/3983839023/concepts/43260001280923](https://classroom.udacity.com/courses/ud867/lessons/3983839023/concepts/43260001280923)
+  一次性签名: `Build > Generate Signed Bundle/APK`. 自动签名: right click on the `"app" directory > Open Module Settings > Signing Config` create a new singing configuration. `Build Variants` add signing config just created.
 * 4.06 Exercise: Add a signing configuration
 * 4.07 more than 65,000 methods `multiDexEnabled true`
-* 4.08 **Proguard** 去除多余代码或resources `minifyEnabled true``shrinkResources true`
+* 4.08 **Proguard** 去除多余代码或resources `minifyEnabled true`,`shrinkResources true`
 * 4.09 **Unit test and Connect(Android) test** 一个只需要java(对应 test)，一个需要android框架(对应 androidTest)
 * 4.10 Exercise: add a Unit test and an Android test.
